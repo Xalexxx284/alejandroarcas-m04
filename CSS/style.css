@@ -1,16 +1,17 @@
 body {
     font-family: sans-serif;
 }
-h1 {
+h1, span {
     color: red;
 }
 h2 {
     color: gray;
+    font-weight: bold;
     text-decoration: underline;
 }
 p {
     font-style: italic;
 }
-span {
-    color: red;
+ol {
+    list-style-type: upper-roman;
 }
