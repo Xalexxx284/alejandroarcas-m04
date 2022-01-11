@@ -11,7 +11,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 350px;
+    width: 370px;
     height: 120px;
     margin-bottom: 10px;
 }
@@ -82,10 +82,15 @@ aside {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    transform: scale(1.05);
+}
+.mifoto:hover {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 /* Content Style */
-
 section {
     margin-top: 15px;
     padding-left: 3%;
@@ -94,21 +99,98 @@ section {
     width: 72%;
 }
 section article img {
-    width: 400px;
-    height: 250px;
+    width: 550px;
+    height: 350px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+section article img:hover {
+    width: 550px;
+    height: 350px;
+    border-radius: 10px;
+    transform: scale(1.02);
+    filter: brightness(1.1);
 }
 .primeraVista {
-    background-color: lightcyan;
     display: flex;
     flex-direction: row;
     width: 100%;
 }
+.primeraVista article {
+    text-align: center;
+    width: 50%;
+}
+.primeraVista article p {
+    padding-left: 10%;
+    justify-content: left;
+    width: 80%;
+}
+.primeraVista article hr {
+    width: 85%;
+    size: 3px;
+    background-color: rgb(34, 184, 34);
+    border-color: rgb(34, 184, 34);
+}
+.primeraVista article b a {
+    text-decoration-line: none;
+    color: black;
+    font-size: 18px;
+}
+
 .segundaVista {
-    background-color: lightgreen;
     display: flex;
     flex-direction: row;
     width: 100%;
 }
+.segundaVista article {
+    text-align: center;
+    width: 50%;
+}
+.segundaVista article p {
+    padding-left: 10%;
+    justify-content: left;
+    width: 80%;
+}
+.segundaVista article hr {
+    width: 85%;
+    size: 3px;
+    background-color: rgb(34, 184, 34);
+    border-color: rgb(34, 184, 34);
+}
+.segundaVista article b {
+    font-size: 18px;
+}
+
+/* Animacion Underline */
+
+.vistaPrevia section article b a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    transition: color .2s;;
+  }
+  
+  .vistaPrevia section article b a:hover {
+    cursor: pointer;
+    color: #464646;
+  }
+  
+  .vistaPrevia section article b a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #4e4e4e;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .vistaPrevia section article b a:hover::before {
+    transform: scaleX(1);
+  }
 
 /* Footer Style */
 
