@@ -1,1 +1,17 @@
-
+.detalle {
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 1px;
+    margin-top: 10px;
+}
+.detalle h3 {
+    font-size: 25px;
+}
+.detalle img {
+    border-radius: 10px;
+}
+.detalleReceta {
+    display: flex;
+    flex: row;
+}
