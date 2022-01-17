@@ -51,6 +51,8 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #242424;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     float: left;
     width: 100%;
     text-align: center;
