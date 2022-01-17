@@ -1,7 +1,147 @@
-main ul li {
-    background-color: aqua;
+/* Main content */
+
+.listadoRecetas ul li {
+    padding-top: 2px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    border-radius: 10px;
 }
-main ul li img {
+.listadoRecetas ul li img {
     width: 230px;
     height: 140px;
+    border-radius: 5px;
+    transition: all .2s;
+}
+.listadoRecetas ul li img:hover {
+    filter: brightness(1.1);
+}
+main {
+    display: flex;
+    flex: row;
+}
+.listadoRecetas {
+    width: 85%;
+    height: 100%;
+}
+aside {
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-top: 16px;
+    border-radius: 10px;
+    width: 15%;
+    background-color: white;
+}
+
+.listadoRecetas ul li h3 b a {
+    text-decoration: none;
+    color: black;
+}
+/* Animacion Underline */
+
+h3 b {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    transition: color .2s;;
+}
+  
+h3 b:hover {
+    cursor: default;
+    color: #8A8070;
+}
+
+h3 b::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #8A8070;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+h3 b:hover::before {
+transform: scaleX(1);
+}
+
+.listadoImg {
+    display: flex;
+    flex: row;
+    margin-bottom: 5px;
+}
+.listadoDesc {
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+/* Lista de paginacion */
+
+.paginacion {
+    text-align: center;
+}
+.paginacion ul {
+    padding-top: 15px;
+    padding-bottom: 15px;
+	list-style: none;
+	text-align: center;
+    border-radius: 10px;
+}
+
+.paginacion ul li {
+	display:inline-block;
+	margin-right:10px;
+}
+
+.paginacion ul li a {
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+	background: #8A8070;
+	text-decoration: none;
+    border-radius: 10px;
+}
+
+.paginacion ul li a:hover {
+	background: #665f54;
+}
+
+/* Aside categorias */
+aside {
+    height: 50%;
+}
+aside h3 {
+    text-align: center;
+}
+aside ul img {
+    width: 40px;
+    height: 40px;
+}
+aside ul div {
+    display: flex;
+    flex: row;
+    margin-bottom: 5px;
+}
+aside ul li {
+    margin-top: 10px;
+    padding-bottom: 40px;
+    list-style: none;
+}
+
+aside ul li a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    transition: all .2s;
+}
+
+aside ul li a:hover {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
 }
