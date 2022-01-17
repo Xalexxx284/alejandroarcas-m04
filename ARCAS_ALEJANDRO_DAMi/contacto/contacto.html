@@ -12,7 +12,7 @@
         <nav>
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
-                <li><a href="">SOBRE MÍ</a></li>
+                <li><a href="../index.html">SOBRE MÍ</a></li>
                 <li><a href="../listado/listado.html">RECETAS</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
                 <li><a href="">OTRAS COSAS</a></li>
@@ -20,14 +20,37 @@
         </nav>
     </header>
 <body>
-    <form action="">
-        <label for="fname">Nombre</label>
-        <input type="text" name="fname" id="fname" placeholder="Nombre">
-        <label for="fsurname">Apellidos</label>
-        <input type="text" name="fsurname" id="fsurname" placeholder="Apellidos">
-        <label for="femail">Email</label>
-        <input type="text" name="femail" id="femail" placeholder="Email">
-        <input type="submit" value="Log-in">
-    </form>
+    <div class="formContact">
+        <h1>Formulario de contacto</h1>
+        <form action="" method="get">
+            <!-- Campo name -->
+            <label for="nombre">Nombre<span class="obligatorio"> * </span></label>
+            <input type="text" name="inputName" id="name" placeholder="Escribe tu nombre" tabindex="1" required>
+            <!-- Campo email-->
+            <label for="email">Email<span class="obligatorio"> * </span></label>
+            <input type="email" name="inputEmail" id="email" placeholder="Escribe tu Email" tabindex="2" required>
+            <!-- Campo telefono -->
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="inputTelefone" id="telefone" placeholder="Escribe tu teléfono" tabindex="3">
+            <!-- Campo mensaje nueva receta -->
+            <br>
+            <label for="mensaje" class="labelMessage">Mensaje<span class="obligatorio"> * </span></label>
+            <br>
+            <textarea name="inputMessage" id="mensaje" cols="30" rows="10" placeholder="Añade aqui tu comentario y/o una consulta de una receta" tabindex="4" required></textarea>
+            <br>
+            <!-- Boton de enviar -->
+            <button type="submit" name="sendForm">Enviar</button>
+            <br>
+            <span class="obligatorio"> * </span>los campos son obligatorios.
+        </form>
+    </div>
+    <footer>
+        <a target="blanck" href="https://facebook.com">FACEBOOK</a>
+        <a target="blanck" href="https://twitter.com">TWITTER</a>
+        <a target="blanck" href="https://instagram.com">INSTAGRAM</a>
+        <a target="blanck" href="https://pinterest.com">PINTEREST</a>
+        <a target="blanck" href="https://gmail.com">EMAIL</a>
+        <a target="blanck" href="">RSS</a>
+    </footer>
 </body>
 </html>
