@@ -1,1 +1,83 @@
+body {
+    height: 100%;
+    background-color: #EAEAEA;
+}
+.formContact {
+    width: 90%;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #FBFBFB;
+    padding-left: 30px;
+}
+span {
+    color: red;
+}
+input {
+    background-color: #FBFBFB;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8A8070;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+textarea {
+    background-color: #FBFBFB;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8A8070;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+label {
+    text-align: left;
+}
+button {
+    width: 420px;
+    height: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    background-color: #8A8070;
+    border-color: #8A8070;
+    border-style: solid;
+    border-radius: 10px;
+    color: white;
+    transition: all .5s;
+}
+button:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+h1 {
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-align: left;
+    color: #8A8070;
+}
+.labelMessage {
+    margin-bottom: 10px;
+}
+form input:focus {
+    outline: 0;
+    border: 1px solid lightgreen;
+}
+form textarea:focus {
+    outline: 0;
+    border: 1px solid lightgreen;
+}
+
 
